@@ -2,26 +2,36 @@ Source: flat-plat
 Section: misc
 Priority: extra
 Maintainer: David Mohammed <fossfreedom@ubuntu.com>
-Build-Depends: debhelper (>= 10),
+Build-Depends: debhelper (>= 9),
  dh-buildinfo,
  pkg-config,
  libgtk-3-dev
 Standards-Version: 3.9.8
-Vcs-Browser: https://github.com/UbuntuBudgie/arc-theme/tree/debian
-Vcs-Git: https://github.com/UbuntuBudgie/arc-theme -b debian
-Homepage: http://github.com/horst3180/arc-theme
+Vcs-Browser: https://github.com/UbuntuBudgie/flat-plat/tree/debian
+Vcs-Git: https://github.com/UbuntuBudgie/flat-plat -b debian
+Homepage: http://github.com/nana-4/flat-plat
 
 Package: flat-plat
 Architecture: all
 Depends: gnome-themes-standard, 
  gtk2-engines-murrine,
+ gtk2-engines-pixbuf,
  ${misc:Depends}
-Description: Flat theme with transparent elements
- Arc is a flat theme with transparent elements for GTK+ 3, GTK+ 2 and 
- GNOME Shell which supports GTK+ 3 and GTK+ 2 based desktop environments 
- like GNOME, Unity, Budgie, Pantheon, Xfce, MATE, etc.
- Arc also includes a GTK+ theme for Plank.
+Description: A Material Design-like theme for GNOME/GTK+ based DEs.
+ Flat-Plat is a Material Design-like theme for GNOME/GTK+ based desktop
+ environments. It supports GTK+3, GTK+2, Metacity, GNOME Shell, Unity, 
+ MATE, LightDM, GDM, Chrome theme, etc.
  .
- Arc is available in three variants:
- Arc, Arc-Darker, Arc-Dark
-
+ Features
+ .
+ Button
+ .
+ Supports ripple effect animations (only GTK+3 apps).
+ Supports both light and dark variants.
+ Supports dark or light titlebar versions.
+ Supports compact version for low resolution.
+ Supports Dash to Dock extension's theming.
+ Supports Workspaces to Dock extension's theming.
+ Supports Chrome/Chromium theme and scrollbars extension.
+ Appears more beautifully when you use a font family including Medium
+ and Light weights.
