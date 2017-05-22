@@ -1,0 +1,4 @@
+version=3
+opts=[...],\
+pgpsigurlmangle=s/archive\/(\d\S+)\.tar\.gz/releases\/download\/$1\/$1\.tar\.gz\.asc/ \
+   https://github.com/horst3180/arc-theme/releases .*/(\d\S+)\.tar\.gz

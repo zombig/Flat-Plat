@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+export destdir=$(CURDIR)/debian/flat-plat
+
+%:
+	dh $@
+	
+override_dh_auto_clean:
+	rm -rf debian/flat-plat
+
+override_dh_auto_install:
+	dh_auto_install
+	./install.sh
+	cd debian/flat-plat; find . -type f -exec chmod 644 {} \;
